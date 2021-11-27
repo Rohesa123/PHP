@@ -1,7 +1,7 @@
 <?php
-$ipk = 3.51;
+$ipk = 2.5;
 
-if ($ipk > 0 && $ipk < 2 ) {
+if ($ipk > 0 && $ipk < 2) {
     echo "Grade E<br>";
     echo "Maaf Anda Harus Mengulang";
 } else if ($ipk >= 2 && $ipk <= 2.6) {

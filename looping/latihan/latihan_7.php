@@ -2,6 +2,17 @@
 
 echo "Pengulangan : <br><br>";
 
-for ($a = 0;$a <=10;$a++) {
-    for ()
+$d = 3;
+$c = 0;
+
+for ($a = 1; $a <= 10; $a++) {
+    for ($b = 3 + $c; $b <= $d; $b++) {
+        echo "$b ";
+
+    }
+    $c += 2;
+
+    $d += 3;
+
+    echo "<br>";
 }

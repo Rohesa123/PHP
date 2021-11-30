@@ -1,8 +1,10 @@
 <?php
 
-for ($i=10;$i >=1;$i--) {
-    for ($j=1;$j <=0;$j++) {
-        echo "$j";
+echo "Pengulangan: <br><br>";
+
+for ($i=1;$i <=10;$i++) {
+    for ($j=$i;$j<=10;$j++) {
+        echo "$j ";
     }
     echo "<br>";
 }

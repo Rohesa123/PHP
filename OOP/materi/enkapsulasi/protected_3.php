@@ -13,7 +13,7 @@ class komputer
         return "Hidupkan Laptop";
     }
 }
-
+z
 // * buat class laptop
 class laptop extends komputer
 {

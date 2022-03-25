@@ -1,6 +1,7 @@
 <?php
 
-function makan() {
+function makan()
+{
     echo "Silahkan Makan";
 }
 

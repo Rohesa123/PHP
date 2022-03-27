@@ -11,22 +11,43 @@
             margin: 0;
             box-sizing: border-box;
         }
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgba(0, 0, 0, 0.884);
+        }
+        .konten.data {
+            margin-top: 120px;
+        }
         .konten {
             padding: 0px 50px 0px 50px;
         }
         .login {
             border-radius: 15px;
-            border: 2px solid rgba(135, 167, 135, 0.836);
-            padding: 80px 0px 30px 0px;
+            border: 2px solid rgb(0, 0, 0);
+            padding: 80px 0px 10px 0px;
             max-width: 600px;
-            height: 350px;
-            background-color: rgb(85, 122, 90);
+            min-height: 280px;
             display: flex;
-            flex-wrap: wrap;
             flex-direction: column;
+            background-color: rgb(21, 189, 21);
+            box-shadow: 0px 10px 1px -2px rgb(12, 124, 12),
+            0px 10px 1px 0px rgb(0, 0, 0),
+            0px 0px 300px 1px rgb(21, 189, 21);
+            transition: 0.45s;
+        }
+        .login:hover {
+            box-shadow: 0px 0px 1px -2px rgb(12, 124, 12),
+            0px 0px 1px 0px rgba(0,0,0),
+            0px 0px 300px 1px rgb(21, 189, 21);
         }
         .login input {
             max-width: 250px;
+            border-radius: 20px;
+            outline: none;
+            transition: 0.45s;
+        }
+        .login input:focus{
+            max-width: 300px;
         }
         .login .konten{
             display: flex;
@@ -58,30 +79,26 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="konten">
-        <div class="login container mt-5 m-auto bg-warning">
+    <div class="konten data">
+        <div class="login container mt-5 m-auto">
             <form method="post">
                 <div class="mb-3 row">
-                    <div class="konten 1 col-12">
+                    <div class="konten satu col-12">
                         <input type="text" name="user" class="form-control" placeholder="Username" required>
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <div class="konten 2 col-12">
+                    <div class="konten dua col-12">
                         <input type="password" name="password" class="form-control" placeholder="Password" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="konten 3 col-12">
+                    <div class="konten tiga col-12">
                         <button class="btn btn-primary" name="login" type="submit">Login</button>
                     </div>
                 </div>

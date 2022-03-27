@@ -78,87 +78,89 @@ $hitung_gaji1 = new hitung_gaji($karyawan, $jabatan, $status_kerja, $lama_kerja,
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .tabel {
-            padding: 30px;
-            padding-left: 100px;
-            padding-right: 100px;
-            margin: auto;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .tabel table {
-            margin: 0px auto 0px auto;
-            margin: auto;
-            padding: 10px;
-        }
-        .table table tr td{
-            border-bottom: 1px solid black;
-            background-color: aqua;
-            padding-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="tabel">
-        <table style="width: 700px;">
-            <tr>
-                <td colspan="2" style="border-bottom: 2px solid black; font-size: 30px; padding-bottom: 5px; text-align: center;">Struk Gaji</td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Nama</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo $hitung_gaji1->karyawan ?></td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Jabatan</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo $hitung_gaji1->jabatan ?></td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Gaji Pokok</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo "Rp. ".number_format($hitung_gaji1->Jabatan(),0,".","."); ?></td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Status Kerja</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo $hitung_gaji1->status_kerja ?></td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Bonus Status Kerja</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo "Rp. ".number_format($hitung_gaji1->statusKerja(),0,".","."); ?></td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Lama Kerja</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo $hitung_gaji1->lama_kerja ?></td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Tunjangan Lama Kerja</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo "Rp. ".number_format($hitung_gaji1->lamaKerja(),0,".","."); ?></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="border-bottom: 2px solid black; padding-top: 5px; font-size: 30px; text-align: left;">Potongan</td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Pinjaman</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo "Rp. ".number_format($hitung_gaji1->pinjaman,0,".","."); ?></td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Tabungan</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo "Rp. ".number_format($hitung_gaji1->tabungan,0,".","."); ?></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="border-bottom: 2px solid black; padding-top: 5px; font-size: 30px; text-align: left;">Total Gaji Bersih</td>
-            </tr>
-            <tr>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;">Total Gaji Bersih</td>
-                <td style="padding-top: 5px; border-bottom: 2px solid black;"><?php echo "Rp. ".number_format($hitung_gaji1->totalGaji(),0,".","."); ?></td>
-            </tr>
-        </table>
+    <div class="container d-flex justify-content-center">
+        <div class="table border-top-0 row justify-content-center mt-5 col-12">
+            <table style="width: 700px;" class="table table-sm table-responsive table-hover border-start border-top border-1 border-end border-dark">
+                <thead>
+                    <tr class="bg-warning">
+                        <th colspan="3" class="text-center fs-3 fw-bold border-bottom border-dark">Struk Gaji</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><?php echo $hitung_gaji1->karyawan ?></td>
+                    </tr>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td>Jabatan</td>
+                        <td>:</td>
+                        <td><?php echo $hitung_gaji1->jabatan ?></td>
+                    </tr>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td>Gaji Pokok</td>
+                        <td>:</td>
+                        <td><?php echo "Rp. ".number_format($hitung_gaji1->Jabatan(),0,".","."); ?></td>
+                    </tr>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td>Status Kerja</td>
+                        <td>:</td>
+                        <td><?php echo $hitung_gaji1->status_kerja ?></td>
+                    </tr>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td>Bonus Status Kerja</td>
+                        <td>:</td>
+                        <td><?php echo "Rp. ".number_format($hitung_gaji1->statusKerja(),0,".","."); ?></td>
+                    </tr>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td>Lama Kerja</td>
+                        <td>:</td>
+                        <td><?php echo $hitung_gaji1->lama_kerja ?></td>
+                    </tr>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td>Tunjangan Lama Kerja</td>
+                        <td>:</td>
+                        <td><?php echo "Rp. ".number_format($hitung_gaji1->lamaKerja(),0,".","."); ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fs-4 fw-bold text-start bg-warning border-bottom border-dark">Potongan</td>
+                    </tr>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td >Pinjaman</td>
+                        <td>:</td>
+                        <td ><?php echo "Rp. ".number_format($hitung_gaji1->pinjaman,0,".","."); ?></td>
+                    </tr>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td >Tabungan</td>
+                        <td>:</td>
+                        <td ><?php echo "Rp. ".number_format($hitung_gaji1->tabungan,0,".","."); ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="fs-4 fw-bold text-start bg-warning border-bottom border-dark">Total Gaji Bersih</td>
+                    </tr>
+                    <tr class="bg-primary text-light border-bottom-dark border-dark">
+                        <td >Total Gaji Bersih</td>
+                        <td>:</td>
+                        <td ><?php echo "Rp. ".number_format($hitung_gaji1->totalGaji(),0,".","."); ?></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="text-center">
+                        <td colspan="3" class="bg-warning">
+                            <a href="form.php" class="link-danger">
+                                <button class="btn btn-danger">Kembali</button>
+                            </a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

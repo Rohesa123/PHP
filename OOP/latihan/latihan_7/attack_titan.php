@@ -1,6 +1,6 @@
 <?php
 
-require "titan.php";
+require_once "./titan.php";
 
 class AttackTitan extends Titan
 {
@@ -11,7 +11,7 @@ class AttackTitan extends Titan
 
     public function aksi()
     {
-        echo "Level Point Attack Titan : $this->pointPower";
-        echo "sifat dari Armor Titan {$this->terjang}";
+        echo "Level Point Attack Titan : $this->powerPoint<br>";
+        echo "sifat dari Attack Titan {$this->punch()}";
     }
 }

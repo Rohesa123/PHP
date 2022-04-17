@@ -35,19 +35,17 @@
 if (isset($_POST['simpan'])) {
     $poin = $_POST['poin'];
 
-    require "titan.php";
-    require "armor_titan.php";
-    require "attack_titan.php";
-    require "beast_titan.php";
-    require "human.php";
+    require_once "titan.php";
+    $titan = new  Titan($poin);
 
-    $titan = new  Titan();
-    $titan->powerPoint = $poin;
-
-    $armor_titan = new ArmorTitan();
-    $attack_titan = new AttackTitan();
-    $beast_titan = new BeastTitan();
-    $human = new Human();
+    require_once "armor_titan.php";
+    $armor_titan = new ArmorTitan($titan->powerPoint);
+    require_once "attack_titan.php";
+    $attack_titan = new AttackTitan($titan->powerPoint);
+    require_once "beast_titan.php";
+    $beast_titan = new BeastTitan($titan->powerPoint);
+    require_once "human.php";
+    $human = new Human($titan->powerPoint);
 
     $armor_titan->aksi();
     echo "<hr>";

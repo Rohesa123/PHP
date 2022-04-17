@@ -1,6 +1,6 @@
 <?php
 
-require "titan.php";
+require_once "titan.php";
 
 class BeastTitan extends Titan
 {
@@ -10,7 +10,7 @@ class BeastTitan extends Titan
 
     public function aksi()
     {
-        echo "Level Point Beast Titan : $this->pointPower";
-        echo "sifat dari Beast Titan {$this->terjang}";
+        echo "Level Point Beast Titan : $this->powerPoint<br>";
+        echo "sifat dari Beast Titan {$this->lempar()}";
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-require "titan.php";
+require_once "titan.php";
 
 class Human extends Titan
 {
@@ -11,7 +11,7 @@ class Human extends Titan
 
     public function aksi()
     {
-        echo "Level Point Human : $this->pointPower";
-        echo "sifat dari Human {$this->terjang}";
+        echo "Level Point Human : $this->powerPoint<br>";
+        echo "sifat dari Human {$this->killAllTitan()}";
     }
 }

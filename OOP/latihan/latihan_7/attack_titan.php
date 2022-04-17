@@ -1,6 +1,6 @@
 <?php
 
-require_once "./titan.php";
+require_once "titan.php";
 
 class AttackTitan extends Titan
 {

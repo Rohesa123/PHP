@@ -2,13 +2,11 @@
 
 class Titan
 {
-    public $powerPoint = 10;
+    public $powerPoint;
 
-    protected function point($a)
+    public function __construct($a)
     {
         $this->powerPoint = $a;
     }
-    public function __construct($a) {
-        $this->point($a = 10);
-    }
+
 }

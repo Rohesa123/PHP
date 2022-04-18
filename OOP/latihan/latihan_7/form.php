@@ -38,8 +38,6 @@ if (isset($_POST['simpan'])) {
     require_once "titan.php";
     $titan = new Titan($poin);
 
-    $titan->powerPoint = $poin;
-
     require_once "armor_titan.php";
     $armor_titan = new ArmorTitan($titan->powerPoint);
     require_once "attack_titan.php";

@@ -38,23 +38,26 @@ if (isset($_POST['simpan'])) {
     require_once "titan.php";
     $titan = new Titan($poin);
 
-    require_once "armor_titan.php";
     $armor_titan = new ArmorTitan($titan->powerPoint);
-    require_once "attack_titan.php";
     $attack_titan = new AttackTitan($titan->powerPoint);
-    require_once "beast_titan.php";
     $beast_titan = new BeastTitan($titan->powerPoint);
-    require_once "human.php";
     $human = new Human($titan->powerPoint);
 
-    $armor_titan->aksi();
     echo "<hr>";
-    $attack_titan->aksi();
+    echo "Level Point Human $human->powerPoint<br>";
+    echo "Sifat Dari Human {$human->killAllTitan()}";
     echo "<hr>";
-    $beast_titan->aksi();
+    echo "Level Point Armor Titan $armor_titan->powerPoint<br>";
+    echo "Sifat Dari Armor Titan {$armor_titan->terjang()}";
     echo "<hr>";
-    $human->aksi();
+    echo "Level Point Attack Titan $attack_titan->powerPoint<br>";
+    echo "Sifat Dari Attack Titan {$attack_titan->punch()}";
     echo "<hr>";
+    echo "Level Point Beast Titan $beast_titan->powerPoint<br>";
+    echo "Sifat Dari Beast Titan {$beast_titan->lempar()}";
+    echo "<hr>";
+
+    
 }
 ?>
     </body>

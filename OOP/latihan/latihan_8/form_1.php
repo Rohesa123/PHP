@@ -27,27 +27,29 @@
                     Sistem Pembayaran
                 </div>
                 <div class="isi konten">
-                    <div class="konten dua text-start mb-0">
-                        <label for="nb" class="pt-3">Nama Barang :</label>
-                        <input type="text" name="nb" required placeholder="Masukkan Nama Barang" class="form-control form-control-sm w-50">
-                    </div>
-                    <div class="konten satu text-start">
-                        <label for="hg" class="pt-3">Harga Barang : </label>
-                        <input type="number" name="harga" required min="0" placeholder="Harga Barang" class="form-control form-control-sm w-50"> 
-                    </div>
-                    <div class="konten tiga text-start">
-                        <label for="jm" class="pt-3">Jumlah Barang : </label>
-                        <input type="number" name="jm" id="jm" required min="1" placeholder="Jumlah Barang" class="form-control form-control-sm w-25">
-                    </div>
-                    <div class="konten empat text-start">
-                        <label for="mp" class="pt-3">Metode Pembayaran</label>
-                        <select name="mp" id="mp" required class="form-select form-select-sm w-50">
-                            <option value="" hidden>Metode Pembayaran</option>
-                            <option value="Cash">Cash</option>
-                            <option value="M-Banking">M-Banking</option>
-                            <option value="Gopay">Gopay</option>
-                            <option value="PickUp">PickUp</option>
-                        </select>
+                    <div class="input row row-cols-2">
+                        <div class="konten dua text-start mb-0 col">
+                            <label for="nb" class="pt-3">Nama Barang :</label>
+                            <input type="text" name="nb" required placeholder="Masukkan Nama Barang" class="form-control form-control-sm w-100">
+                        </div>
+                        <div class="konten satu text-start col">
+                            <label for="hg" class="pt-3">Harga Barang : </label>
+                            <input type="number" name="harga" required min="0" placeholder="Harga Barang" class="form-control form-control-sm w-100"> 
+                        </div>
+                        <div class="konten tiga text-start col">
+                            <label for="jm" class="pt-3">Jumlah Barang : </label>
+                            <input type="number" name="jm" id="jm" required min="1" placeholder="Jumlah Barang" class="form-control form-control-sm w-100">
+                        </div>
+                        <div class="konten empat text-start col">
+                            <label for="mp" class="pt-3">Metode Pembayaran</label>
+                            <select name="mp" id="mp" required class="form-select form-select-sm w-100">
+                                <option value="" hidden>Metode Pembayaran</option>
+                                <option value="Cash">Cash</option>
+                                <option value="M-Banking">M-Banking</option>
+                                <option value="Gopay">Gopay</option>
+                                <option value="PickUp">PickUp</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="konten lima pt-4 pb-3">
                         <button type="submit" name="kirim" class="btn btn-primary">Kirim</button>

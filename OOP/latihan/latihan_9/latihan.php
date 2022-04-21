@@ -120,28 +120,28 @@
                     </div>
                     <div class="konten inputan dua row row-cols-1">
                         <div class="indonesia col-3">
-                            <input type="number" min="0" max="100" required name="BInilaiK" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BInilaiT" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BInilaiA" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BInilaiU" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BInilai[0]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BInilai[1]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BInilai[2]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BInilai[3]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2"> 
                         </div>
                         <div class="inggris col-3">
-                            <input type="number" min="0" max="100" required name="BENnilaiK" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BENnilaiT" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BENnilaiA" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BENnilaiU" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BENnilai[0]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BENnilai[1]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BENnilai[2]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BENnilai[3]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2"> 
                         </div>
                         <div class="mtk col-3">
-                            <input type="number" min="0" max="100" required name="MTKnilaiK" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="MTKnilaiT" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="MTKnilaiA" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="MTKnilaiU" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2">
+                            <input type="number" min="0" max="100" required name="MTKnilai[0]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="MTKnilai[1]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="MTKnilai[2]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="MTKnilai[3]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2">
                         </div>
                         <div class="produktif col-3">
-                            <input type="number" min="0" max="100" required name="PnilaiK" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="PnilaiT" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="PnilaiA" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="PnilaiU" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2">
+                            <input type="number" min="0" max="100" required name="Pnilai[0]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="Pnilai[1]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="Pnilai[2]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="Pnilai[3]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2">
                         </div>
                     </div>
                     <div class="tombol text-center mt-3 mb-2">
@@ -163,37 +163,24 @@
         $tingkatan = $_POST['tingkatan'];
 
         // * Nilai Indonesia
-        $BInilaiK = $_POST['BInilaiK'];
-        $BInilaiT = $_POST['BInilaiT'];
-        $BInilaiA = $_POST['BInilaiA'];
-        $BInilaiU = $_POST['BInilaiU'];
+        $BInilai = $_POST['BInilai'];
 
         // * Nilai Inggris
-        $BENnilaiK = $_POST['BENnilaiK'];
-        $BENnilaiT = $_POST['BENnilaiT'];
-        $BENnilaiA = $_POST['BENnilaiA'];
-        $BENnilaiU = $_POST['BENnilaiU'];
-
+        $BENnilai = $_POST['BENnilai'];
 
         // * Nilai MTK
-        $MTKnilaiK = $_POST['MTKnilaiK'];
-        $MTKnilaiT = $_POST['MTKnilaiT'];
-        $MTKnilaiA = $_POST['MTKnilaiA'];
-        $MTKnilaiU = $_POST['MTKnilaiU'];
+        $MTKnilai = $_POST['MTKnilai'];
 
         // * Nilai Produktif
-        $PnilaiK = $_POST['PnilaiK'];
-        $PnilaiT = $_POST['PnilaiT'];
-        $PnilaiA = $_POST['PnilaiA'];
-        $PnilaiU = $_POST['PnilaiU'];
+        $Pnilai = $_POST['Pnilai'];
 
         require_once "class.php";
 
         $identitas = new Nilai($nis,$nama,$kelas,$jurusan,$tingkatan);
-        $indo = new NilaiIndo($BInilaiK,$BInilaiT,$BInilaiA,$BInilaiU);
-        $inggris = new NilaiInggris($BENnilaiK,$BENnilaiT,$BENnilaiA,$BENnilaiU);
-        $mtk = new NilaiMTK($MTKnilaiK,$MTKnilaiT,$MTKnilaiA,$MTKnilaiU);
-        $produktif = new NilaiProduktif($PnilaiK,$PnilaiT,$PnilaiA,$PnilaiU);
+        $indo = new NilaiIndo($BInilai);
+        $inggris = new NilaiInggris($BENnilai);
+        $mtk = new NilaiMTK($MTKnilai);
+        $produktif = new NilaiProduktif($Pnilai);
 ?>
     <div class="konten dua container mt-5 mb-5">
         <div class="judul konten dua text-center mb-4 animasi2">

@@ -46,12 +46,12 @@ class NilaiIndo extends Nilai
 {
     private $nilaiK, $nilaiT, $nilaiA, $nilaiU;
 
-    public function __construct($a, $b, $c, $d)
+    public function __construct($a)
     {
-        $this->nilaiK = $a;
-        $this->nilaiT = $b;
-        $this->nilaiA = $c;
-        $this->nilaiU = $d;
+        $this->nilaiK = $a[0];
+        $this->nilaiT = $a[1];
+        $this->nilaiA = $a[2];
+        $this->nilaiU = $a[3];
     }
 
     public function nilaiAkhir()
@@ -89,12 +89,12 @@ class NilaiInggris extends Nilai
 {
     private $nilaiK, $nilaiT, $nilaiA, $nilaiU;
 
-    public function __construct($a, $b, $c, $d)
+    public function __construct($a)
     {
-        $this->nilaiK = $a;
-        $this->nilaiT = $b;
-        $this->nilaiA = $c;
-        $this->nilaiU = $d;
+        $this->nilaiK = $a[0];
+        $this->nilaiT = $a[1];
+        $this->nilaiA = $a[2];
+        $this->nilaiU = $a[3];
     }
 
     public function nilaiAkhir()
@@ -132,12 +132,12 @@ class NilaiMTK extends Nilai
 {
     private $nilaiK, $nilaiT, $nilaiA, $nilaiU;
 
-    public function __construct($a, $b, $c, $d)
+    public function __construct($a)
     {
-        $this->nilaiK = $a;
-        $this->nilaiT = $b;
-        $this->nilaiA = $c;
-        $this->nilaiU = $d;
+        $this->nilaiK = $a[0];
+        $this->nilaiT = $a[1];
+        $this->nilaiA = $a[2];
+        $this->nilaiU = $a[3];
     }
 
     public function nilaiAkhir()
@@ -175,12 +175,12 @@ class NilaiProduktif extends Nilai
 {
     private $nilaiK, $nilaiT, $nilaiA, $nilaiU;
 
-    public function __construct($a, $b, $c, $d)
+    public function __construct($a)
     {
-        $this->nilaiK = $a;
-        $this->nilaiT = $b;
-        $this->nilaiA = $c;
-        $this->nilaiU = $d;
+        $this->nilaiK = $a[0];
+        $this->nilaiT = $a[1];
+        $this->nilaiA = $a[2];
+        $this->nilaiU = $a[3];
     }
 
     public function nilaiAkhir()

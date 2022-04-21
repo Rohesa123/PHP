@@ -71,17 +71,35 @@
                         <input type="text" name="nama" required placeholder="Masukkan Nama" id="nama" class="form-control form-control-sm">
                     </div>
                     <div class="input dua text-start pt-2">
-                        <label for="jurusan" class="form-label">Jurusan</label>
-                        <select name="jurusan" id="jurusan" required class="form-select form-select-sm">
-                            <option value="" hidden>Pilih Jurusan</option>
-                            <option value="RPL">Rekayasa Perangkat Lunak</option>
-                            <option value="TBSM">Teknik Bisnis Sepeda Motor</option>
-                            <option value="TKRO">Teknik Kendaraan Ringan Otomotif</option>
-                        </select>
-                    </div>
-                    <div class="input dua text-start pt-2">
-                        <label for="kelas" class="form-label">Kelas</label>
-                        <input type="text" name="kelas" required placeholder="Masukkan Kelas" id="kelas" class="form-control form-control-sm">
+                        <div class="judul input kelas">
+                            <label for="" class="form-label">Kelas</label>
+                        </div>
+                        <div class="inputan kelas row row-cols-1">
+                            <div class="inputan kelas satu col-4">
+                                <select name="kelas" id="" required class="form-select form-select-sm">
+                                    <option value="" hidden>Kelas</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                            <div class="inputan kelas dua col-4">
+                                <select name="jurusan" id="" required class="form-select form-select-sm">
+                                    <option value="" hidden>Jurusan</option>
+                                    <option value="RPL">Rekayasa Perangkat Lunak</option>
+                                    <option value="TBSM">Teknik Bisnis Sepeda Motor</option>
+                                    <option value="TKRO">Teknik Kendaraan Ringan Otomotif</option>
+                                </select>
+                            </div>
+                            <div class="inputan kelas tiga col-4">
+                                <select name="tingkatan" id="" required class="form-select form-select-sm">
+                                    <option value="" hidden>Tingkatan</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="judul input text-center mt-3 mb-3">
                         <h4><u>Nilai Ujian Sekolah</u></h4>
@@ -142,6 +160,7 @@
         $nama = $_POST['nama'];
         $jurusan = $_POST['jurusan'];
         $kelas = $_POST['kelas'];
+        $tingkatan = $_POST['tingkatan'];
 
         // * Nilai Indonesia
         $BInilaiK = $_POST['BInilaiK'];
@@ -170,7 +189,7 @@
 
         require_once "class.php";
 
-        $identitas = new Nilai($nis,$nama,$jurusan,$kelas);
+        $identitas = new Nilai($nis,$nama,$kelas,$jurusan,$tingkatan);
         $indo = new NilaiIndo($BInilaiK,$BInilaiT,$BInilaiA,$BInilaiU);
         $inggris = new NilaiInggris($BENnilaiK,$BENnilaiT,$BENnilaiA,$BENnilaiU);
         $mtk = new NilaiMTK($MTKnilaiK,$MTKnilaiT,$MTKnilaiA,$MTKnilaiU);

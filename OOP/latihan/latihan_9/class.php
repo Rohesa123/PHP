@@ -2,14 +2,23 @@
 
 class Nilai
 {
-    protected $nis, $nama, $jurusan, $kelas;
+    protected $nis, $nama, $jurusan, $kelas, $jrsn, $tingkatan;
 
-    public function __construct($a, $b, $c, $d)
+    public function __construct($a, $b, $c, $d, $e)
     {
         $this->nis = $a;
         $this->nama = $b;
-        $this->jurusan = $c;
-        $this->kelas = $d;
+        $this->kelas = $c;
+        $this->jrsn = $d;
+        $this->tingkatan = $e;
+
+        if ($d == "RPL") {
+            $this->jurusan = "Rekayasa Perangkat Lunak";
+        } else if ($d == "TBSM") {
+            $this->jurusan = "Teknik Bisnis Sepeda Motor";
+        } else if ($d == "TKRO") {
+            $this->jurusan = "Teknik Kendaraan Ringan Otomotif";
+        }
     }
 
     public function getNis()
@@ -29,7 +38,7 @@ class Nilai
 
     public function getKelas()
     {
-        return $this->kelas;
+        return "$this->kelas $this->jrsn $this->tingkatan";
     }
 }
 

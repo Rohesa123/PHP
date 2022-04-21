@@ -260,16 +260,16 @@
                                     Nilai Kehadiran
                                 </td>
                                 <td scope="col">
-                                    <?php echo $indo->getNilaiK(); ?>
+                                    <?php echo $indo->nilai[0]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $inggris->getNilaiK(); ?>
+                                    <?php echo $inggris->nilai[0]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $mtk->getNilaiK(); ?>
+                                    <?php echo $mtk->nilai[0]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $produktif->getNilaiK(); ?>
+                                    <?php echo $produktif->nilai[0]; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -277,16 +277,16 @@
                                     Nilai tugas
                                 </td>
                                 <td scope="col">
-                                    <?php echo $indo->getNilaiT(); ?>
+                                    <?php echo $indo->nilai[1]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $inggris->getNilaiT(); ?>
+                                    <?php echo $inggris->nilai[1]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $mtk->getNilaiT(); ?>
+                                    <?php echo $mtk->nilai[1]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $produktif->getNilaiT(); ?>
+                                    <?php echo $produktif->nilai[1]; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -294,16 +294,16 @@
                                     Nilai Absen
                                 </td>
                                 <td scope="col">
-                                    <?php echo $indo->getNilaiA(); ?>
+                                    <?php echo $indo->nilai[2]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $inggris->getNilaiA(); ?>
+                                    <?php echo $inggris->nilai[2]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $mtk->getNilaiA(); ?>
+                                    <?php echo $mtk->nilai[2]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $produktif->getNilaiA(); ?>
+                                    <?php echo $produktif->nilai[2]; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -311,16 +311,16 @@
                                     Nilai Ujian
                                 </td>
                                 <td scope="col">
-                                    <?php echo $indo->getNilaiU(); ?>
+                                    <?php echo $indo->nilai[3]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $inggris->getNilaiU(); ?>
+                                    <?php echo $inggris->nilai[3]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $mtk->getNilaiU(); ?>
+                                    <?php echo $mtk->nilai[3]; ?>
                                 </td>
                                 <td scope="col">
-                                    <?php echo $produktif->getNilaiU(); ?>
+                                    <?php echo $produktif->nilai[3]; ?>
                                 </td>
                             </tr>
                         </tbody>

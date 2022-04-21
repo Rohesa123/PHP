@@ -44,172 +44,84 @@ class Nilai
 
 class NilaiIndo extends Nilai
 {
-    private $nilaiK, $nilaiT, $nilaiA, $nilaiU;
+    public $nilai;
 
     public function __construct($a)
     {
-        $this->nilaiK = $a[0];
-        $this->nilaiT = $a[1];
-        $this->nilaiA = $a[2];
-        $this->nilaiU = $a[3];
+        $this->nilai = $a;
     }
 
     public function nilaiAkhir()
     {
-        $NilaiK = $this->nilaiK * 0.15;
-        $NilaiT = $this->nilaiT * 0.2;
-        $NilaiA = $this->nilaiA * 0.4;
-        $NilaiU = $this->nilaiU * 0.25;
+        $Nilai[0] = $this->nilai[0] * 0.15;
+        $Nilai[1] = $this->nilai[1] * 0.2;
+        $Nilai[2] = $this->nilai[2] * 0.4;
+        $Nilai[3] = $this->nilai[3] * 0.25;
 
-        return ($NilaiK + $NilaiT + $NilaiA + $NilaiU);
+        return ($Nilai[0] + $Nilai[1] + $Nilai[2] + $Nilai[3]);
     }
-
-    public function getNilaiK()
-    {
-        return $this->nilaiK;
-    }
-
-    public function getNilaiT()
-    {
-        return $this->nilaiT;
-    }
-
-    public function getNilaiA()
-    {
-        return $this->nilaiA;
-    }
-
-    public function getNilaiU()
-    {
-        return $this->nilaiU;
-    }
+    
 }
 
 class NilaiInggris extends Nilai
 {
-    private $nilaiK, $nilaiT, $nilaiA, $nilaiU;
+    public $nilai;
 
     public function __construct($a)
     {
-        $this->nilaiK = $a[0];
-        $this->nilaiT = $a[1];
-        $this->nilaiA = $a[2];
-        $this->nilaiU = $a[3];
+        $this->nilai = $a;
     }
 
     public function nilaiAkhir()
     {
-        $NilaiK = $this->nilaiK * 0.15;
-        $NilaiT = $this->nilaiT * 0.2;
-        $NilaiA = $this->nilaiA * 0.4;
-        $NilaiU = $this->nilaiU * 0.25;
+        $Nilai[0] = $this->nilai[0] * 0.15;
+        $Nilai[1] = $this->nilai[1] * 0.2;
+        $Nilai[2] = $this->nilai[2] * 0.4;
+        $Nilai[3] = $this->nilai[3] * 0.25;
 
-        return ($NilaiK + $NilaiT + $NilaiA + $NilaiU);
+        return ($Nilai[0] + $Nilai[1] + $Nilai[2] + $Nilai[3]);
     }
 
-    public function getNilaiK()
-    {
-        return $this->nilaiK;
-    }
-
-    public function getNilaiT()
-    {
-        return $this->nilaiT;
-    }
-
-    public function getNilaiA()
-    {
-        return $this->nilaiA;
-    }
-
-    public function getNilaiU()
-    {
-        return $this->nilaiU;
-    }
 }
 
 class NilaiMTK extends Nilai
 {
-    private $nilaiK, $nilaiT, $nilaiA, $nilaiU;
+    public $nilai;
 
     public function __construct($a)
     {
-        $this->nilaiK = $a[0];
-        $this->nilaiT = $a[1];
-        $this->nilaiA = $a[2];
-        $this->nilaiU = $a[3];
+        $this->nilai = $a;
     }
 
     public function nilaiAkhir()
     {
-        $NilaiK = $this->nilaiK * 0.15;
-        $NilaiT = $this->nilaiT * 0.2;
-        $NilaiA = $this->nilaiA * 0.4;
-        $NilaiU = $this->nilaiU * 0.25;
+        $Nilai[0] = $this->nilai[0] * 0.15;
+        $Nilai[1] = $this->nilai[1] * 0.2;
+        $Nilai[2] = $this->nilai[2] * 0.4;
+        $Nilai[3] = $this->nilai[3] * 0.25;
 
-        return ($NilaiK + $NilaiT + $NilaiA + $NilaiU);
+        return ($Nilai[0] + $Nilai[1] + $Nilai[2] + $Nilai[3]);
     }
 
-    public function getNilaiK()
-    {
-        return $this->nilaiK;
-    }
-
-    public function getNilaiT()
-    {
-        return $this->nilaiT;
-    }
-
-    public function getNilaiA()
-    {
-        return $this->nilaiA;
-    }
-
-    public function getNilaiU()
-    {
-        return $this->nilaiU;
-    }
 }
 
 class NilaiProduktif extends Nilai
 {
-    private $nilaiK, $nilaiT, $nilaiA, $nilaiU;
+    public $nilai;
 
     public function __construct($a)
     {
-        $this->nilaiK = $a[0];
-        $this->nilaiT = $a[1];
-        $this->nilaiA = $a[2];
-        $this->nilaiU = $a[3];
+        $this->nilai = $a;
     }
 
     public function nilaiAkhir()
     {
-        $NilaiK = $this->nilaiK * 0.15;
-        $NilaiT = $this->nilaiT * 0.2;
-        $NilaiA = $this->nilaiA * 0.4;
-        $NilaiU = $this->nilaiU * 0.25;
+        $Nilai[0] = $this->nilai[0] * 0.15;
+        $Nilai[1] = $this->nilai[1] * 0.2;
+        $Nilai[2] = $this->nilai[2] * 0.4;
+        $Nilai[3] = $this->nilai[3] * 0.25;
 
-        return ($NilaiK + $NilaiT + $NilaiA + $NilaiU);
+        return ($Nilai[0] + $Nilai[1] + $Nilai[2] + $Nilai[3]);
     }
 
-    public function getNilaiK()
-    {
-        return $this->nilaiK;
-    }
-
-    public function getNilaiT()
-    {
-        return $this->nilaiT;
-    }
-
-    public function getNilaiA()
-    {
-        return $this->nilaiA;
-    }
-
-    public function getNilaiU()
-    {
-        return $this->nilaiU;
-    }
 }

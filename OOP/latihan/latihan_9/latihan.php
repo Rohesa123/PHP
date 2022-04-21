@@ -16,13 +16,46 @@
         option {
             color: #000;
         }
+        body {
+            background-image: url(img/latar_3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .animasi_1 {
+            animation: animasi1 2s cubic-bezier(0.11, 0.76, 0.91, 1.3) forwards;
+        }
+        @keyframes animasi1 {
+            0% {
+                transform: translateY(-200px) scale(0.4);
+            }
+            50% {
+                transform: translateY(0px) scale(0.4);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .animasi2 {
+            animation: animasi2 5s cubic-bezier(0.11, 0.76, 0.91, 1.3) forwards;
+        }
+        @keyframes animasi2 {
+            0% {
+                transform: translateX(-1200px) scale(0.4);
+            }
+            80% {
+                transform: translateX(0px) scale(0.4);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
     </style>
 </head>
 <body class="bg-secondary">
     <form action="" method="post">
         <div class="konten container">
-            <div class="judul text-center mt-4 mb-3">
-                <h4><b>Nilai Ujian Sekolah<br>SMK ASSALAAM BANDUNG</b></h4>
+            <div class="judul text-center mt-4 mb-3 d-flex justify-content-center">
+                <h4 style="color: white; background-color: rgba(0, 0, 0, 0.712); border-radius: 20px; box-shadow: 0px 4px 0px 0px rgba(225, 225, 225, 0.637);" class="p-2 animasi_1"><b>Nilai Ujian Sekolah<br>SMK ASSALAAM BANDUNG</b></h4>
             </div>
             <div class="konten tabel card border-2 border-dark mb-3">
                 <div class="judul tabel card-header border-2 border-dark bg-primary text-white">
@@ -144,14 +177,14 @@
         $produktif = new NilaiProduktif($PnilaiK,$PnilaiT,$PnilaiA,$PnilaiU);
 ?>
     <div class="konten dua container mt-5 mb-5">
-        <div class="judul konten dua text-center mb-3">
-            <h4><b>Nilai Ujian sekolah</b></h4>
+        <div class="judul konten dua text-center mb-4 animasi2">
+            <h4><b style="color: white; background-color: rgba(0, 0, 0, 0.712); border-radius: 15px; box-shadow: 0px 4px 0px 0px rgba(225, 225, 225, 0.637);" class="p-2 ">Nilai Ujian sekolah</b></h4>
         </div>
         <div class="konten dua card border-2 border-warning">
             <div class="judul tabel konten text-center card-header border-2 border-bottom border-warning bg-primary text-white">
                 <b>Form Nilai</b>
             </div>
-            <div class="konten satu text-primary bg-dark    ">
+            <div class="konten satu text-primary bg-dark">
                 <div class="judul tabel konten text-center mt-2">
                     <h4><b>Data Siswa</b></h4>
                 </div>

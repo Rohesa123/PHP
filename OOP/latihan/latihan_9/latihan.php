@@ -21,6 +21,22 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        .tombol1 {
+            box-shadow: 0px 10px 0px 0px rgb(11, 59, 122);
+            transition: 0.5s;
+        }
+        .tombol1:focus {
+            box-shadow: 0px 0px 0px 0px rgb(11, 59, 122);
+            transform: translateY(10px);
+        }
+        .tombol2 {
+            box-shadow: 0px 10px 0px 0px rgb(141, 27, 52);
+            transition: 0.5s;
+        }
+        .tombol2:focus {
+            box-shadow: 0px 0px 0px 0px rgb(141, 27, 52);
+            transform: translateY(10px);
+        }
         .animasi_1 {
             animation: animasi1 2s cubic-bezier(0.11, 0.76, 0.91, 1.3) forwards;
         }
@@ -120,33 +136,33 @@
                     </div>
                     <div class="konten inputan dua row row-cols-1">
                         <div class="indonesia col-3">
-                            <input type="number" min="0" max="100" required name="BInilai[0]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BInilai[1]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BInilai[2]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BInilai[3]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BInilai[]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BInilai[]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BInilai[]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BInilai[]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2"> 
                         </div>
                         <div class="inggris col-3">
-                            <input type="number" min="0" max="100" required name="BENnilai[0]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BENnilai[1]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BENnilai[2]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="BENnilai[3]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BENnilai[]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BENnilai[]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BENnilai[]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="BENnilai[]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2"> 
                         </div>
                         <div class="mtk col-3">
-                            <input type="number" min="0" max="100" required name="MTKnilai[0]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="MTKnilai[1]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="MTKnilai[2]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="MTKnilai[3]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2">
+                            <input type="number" min="0" max="100" required name="MTKnilai[]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="MTKnilai[]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="MTKnilai[]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="MTKnilai[]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2">
                         </div>
                         <div class="produktif col-3">
-                            <input type="number" min="0" max="100" required name="Pnilai[0]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="Pnilai[1]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="Pnilai[2]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
-                            <input type="number" min="0" max="100" required name="Pnilai[3]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2">
+                            <input type="number" min="0" max="100" required name="Pnilai[]" placeholder="Nilai Kehadiran" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="Pnilai[]" placeholder="Nilai Tugas" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="Pnilai[]" placeholder="Nilai Absen" class="form-control form-select-sm w-100 mt-2"> 
+                            <input type="number" min="0" max="100" required name="Pnilai[]" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2">
                         </div>
                     </div>
-                    <div class="tombol text-center mt-3 mb-2">
-                        <button type="submit" name="proses" class="btn btn-primary">Proses</button>
-                        <button type="reset" class="btn btn-danger">Hapus</button>
+                    <div class="tombol text-center mt-3 mb-4">
+                        <button type="submit" name="proses" class="btn btn-primary tombol1">Proses</button>
+                        <button type="reset" class="btn btn-danger tombol2">Hapus</button>
                     </div>
                 </div>
             </div>

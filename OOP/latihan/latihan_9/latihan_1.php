@@ -21,6 +21,22 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        .tombol1 {
+            box-shadow: 0px 10px 0px 0px rgb(11, 59, 122);
+            transition: 0.5s;
+        }
+        .tombol1:focus {
+            box-shadow: 0px 0px 0px 0px rgb(11, 59, 122);
+            transform: translateY(10px);
+        }
+        .tombol2 {
+            box-shadow: 0px 10px 0px 0px rgb(141, 27, 52);
+            transition: 0.5s;
+        }
+        .tombol2:focus {
+            box-shadow: 0px 0px 0px 0px rgb(141, 27, 52);
+            transform: translateY(10px);
+        }
         .animasi_1 {
             animation: animasi1 2s cubic-bezier(0.11, 0.76, 0.91, 1.3) forwards;
         }
@@ -65,6 +81,9 @@
                     <div class="input satu text-start pt-2">
                         <label for="nis" class="form-label">Nis</label>
                         <input type="number" name="nis" required placeholder="Masukkan Nis" id="nis" min="0" class="form-control form-control-sm">
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
                     </div>
                     <div class="input dua text-start pt-2">
                         <label for="nama" class="form-label">Nama</label>
@@ -126,9 +145,9 @@
                             <input type="number" min="0" max="100" required name="PnilaiU" placeholder="Nilai Ujian" class="form-control form-select-sm w-100 mt-2">
                         </div>
                     </div>
-                    <div class="tombol text-center mt-3 mb-2">
-                        <button type="submit" name="proses" class="btn btn-primary">Proses</button>
-                        <button type="reset" class="btn btn-danger">Hapus</button>
+                    <div class="tombol text-center mt-3 mb-4">
+                        <button type="submit" name="proses" class="btn btn-primary tombol1">Proses</button>
+                        <button type="reset" class="btn btn-danger tombol2">Hapus</button>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,8 @@
 
 class Nilai
 {
-    protected $nis, $nama, $jurusan, $kelas, $jrsn, $tingkatan;
+    private $nis, $nama, $jurusan, $kelas, $jrsn, $tingkatan;
+    protected $rataRata = [0.15, 0.2, 0.4, 0.25];
 
     public function __construct($a, $b, $c, $d, $e)
     {
@@ -25,17 +26,14 @@ class Nilai
     {
         return $this->nis;
     }
-
     public function getNama()
     {
         return $this->nama;
     }
-
     public function getJurusan()
     {
         return $this->jurusan;
     }
-
     public function getKelas()
     {
         return "$this->kelas $this->jrsn $this->tingkatan";
@@ -50,17 +48,14 @@ class NilaiIndo extends Nilai
     {
         $this->nilai = $a;
     }
-
     public function nilaiAkhir()
     {
-        $Nilai[0] = $this->nilai[0] * 0.15;
-        $Nilai[1] = $this->nilai[1] * 0.2;
-        $Nilai[2] = $this->nilai[2] * 0.4;
-        $Nilai[3] = $this->nilai[3] * 0.25;
+        for ($i = 0; $i < count($this->nilai); $i++) {
+            $Nilai[$i] = $this->nilai[$i] * $this->rataRata[$i];
+        }
 
         return ($Nilai[0] + $Nilai[1] + $Nilai[2] + $Nilai[3]);
     }
-    
 }
 
 class NilaiInggris extends Nilai
@@ -71,17 +66,14 @@ class NilaiInggris extends Nilai
     {
         $this->nilai = $a;
     }
-
     public function nilaiAkhir()
     {
-        $Nilai[0] = $this->nilai[0] * 0.15;
-        $Nilai[1] = $this->nilai[1] * 0.2;
-        $Nilai[2] = $this->nilai[2] * 0.4;
-        $Nilai[3] = $this->nilai[3] * 0.25;
+        for ($i = 0; $i < count($this->nilai); $i++) {
+            $Nilai[$i] = $this->nilai[$i] * $this->rataRata[$i];
+        }
 
         return ($Nilai[0] + $Nilai[1] + $Nilai[2] + $Nilai[3]);
     }
-
 }
 
 class NilaiMTK extends Nilai
@@ -92,17 +84,14 @@ class NilaiMTK extends Nilai
     {
         $this->nilai = $a;
     }
-
     public function nilaiAkhir()
     {
-        $Nilai[0] = $this->nilai[0] * 0.15;
-        $Nilai[1] = $this->nilai[1] * 0.2;
-        $Nilai[2] = $this->nilai[2] * 0.4;
-        $Nilai[3] = $this->nilai[3] * 0.25;
+        for ($i = 0; $i < count($this->nilai); $i++) {
+            $Nilai[$i] = $this->nilai[$i] * $this->rataRata[$i];
+        }
 
         return ($Nilai[0] + $Nilai[1] + $Nilai[2] + $Nilai[3]);
     }
-
 }
 
 class NilaiProduktif extends Nilai
@@ -113,15 +102,12 @@ class NilaiProduktif extends Nilai
     {
         $this->nilai = $a;
     }
-
     public function nilaiAkhir()
     {
-        $Nilai[0] = $this->nilai[0] * 0.15;
-        $Nilai[1] = $this->nilai[1] * 0.2;
-        $Nilai[2] = $this->nilai[2] * 0.4;
-        $Nilai[3] = $this->nilai[3] * 0.25;
+        for ($i = 0; $i < count($this->nilai); $i++) {
+            $Nilai[$i] = $this->nilai[$i] * $this->rataRata[$i];
+        }
 
         return ($Nilai[0] + $Nilai[1] + $Nilai[2] + $Nilai[3]);
     }
-
 }

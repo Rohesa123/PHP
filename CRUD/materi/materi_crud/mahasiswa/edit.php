@@ -79,7 +79,7 @@ foreach ($dosen->index() as $data_satu) {
                     <button type="submit" name="save" class="btn btn-primary">Simpan</button>
                 </form>
 
-            </div>
+            </div>  
         </div>
         </div>
 
